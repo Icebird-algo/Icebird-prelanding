@@ -4,41 +4,75 @@ import Img from "./image-component";
 export default function PageContent () {
   return(
     <>
-      <Grid container>
-        <Grid container>
-          <Grid item xs={6}>
-            <div>Icebird Algo</div>
+      <Grid container spacing={2} style={{ paddingTop: '50px' }}>
+        <Grid container style={{ marginTop: '25px' }}>
+          <Grid item xs={6} style={{ paddingLeft: '50px' }}>
+            <div style={{ fontSize: '75px' }}>Icebird Algo</div>
             <hr/>
-            <div>For You</div>
+            <div style={{ fontSize: '75px' }}>For You</div>
           </Grid>
           <Grid item xs={6}><Img src="images/0LOGO.jpg" /></Grid>
         </Grid>
-        <Grid container>
+        <Grid container style={{ marginTop: '50px' }}>
           <Grid item xs={6}><Img src="images/A.jpg" /></Grid>
           <Grid item xs={6}><Img src="images/B.jpg" /></Grid>
         </Grid>
+        <Grid item xs={12} style={{ marginTop: '50px' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '40px' }}>Three words</div>
+          <div style={{ fontWeight: 'bold', fontSize: '30px' }}>Three words</div>
+          <div style={{ fontWeight: 'bold', fontSize: '25px' }}>Three words</div>
+        </Grid>
+        <Grid container style={{ marginTop: '50px' }}>
+          <Grid item xs={8} style={{ padding: '250px 0px 250px 50px', backgroundColor: '#ab36fe' }}>
+            Secure: NFTs can't be faked. Pay with algo. By blockchain system, contracts can't be falsified.
+          </Grid>
+          <Grid item xs={4}>
+            <Img src="images/C.jpg" />
+            </Grid>
+          <Grid item xs={8} style={{ padding: '250px 0px 250px 50px', backgroundColor: '#4287f5' }}>
+            Easy: just connect your wallet and trade. Don't worry, we generate your contracts and the payment method is also 100% automatic.
+          </Grid>
+          <Grid item xs={4}>
+            <Img src="images/D.jpg" />
+            </Grid>
+          <Grid item xs={8} style={{ padding: '250px 0px 250px 50px', backgroundColor: '#76f834' }}>
+            Green: forget about paper. Save the trees.
+          </Grid>
+          <Grid item xs={4}>
+            <Img src="images/E.jpg" />
+          </Grid>
+        </Grid>
+        <Grid container style={{ marginTop: '50px' }}>
+          <Grid item xs={12}>
+            Okay...
+          </Grid>
+          <Grid item xs={4}>
+            <Img src="images/F.jpg" />
+          </Grid>
+          <Grid item xs={8}>
+            But is this REAL?
+          </Grid>
+        </Grid>
+        <Grid container style={{ marginTop: '50px' }}>
+          <Grid item xs={12}>
+            Short answer:
+          </Grid>
+          <Grid item xs={6}>
+            Yes!
+          </Grid>
+          <Grid item xs={6}>
+            <Img src="images/G.jpg" />
+          </Grid>
+        </Grid>
+        <Grid item xs={12} style={{ marginTop: '50px' }}>
+          We are developing our product now. We ask people to tell about what they want. If you would like to help us with your opinion, just write feedback.
+        </Grid>
         <Grid item xs={12}>
-          <h2>Three words</h2>
-          <h3>Three words</h3>
-          <h4>Three words</h4>
+          9-es szövegdoboz (max 250 karakter)
         </Grid>
-        <Grid item xs={8}>
-          Secure: NFTs can't be faked. Pay with algo. By blockchain system, contracts can't be falsified.
+        <Grid item xs={12}>
+          *Design elemek...*
         </Grid>
-        <Grid item xs={4}><Img src="images/C.jpg" /></Grid>
-        <Grid item xs={8}>Easy: just connect your wallet and trade. Don't worry, we generate your contracts and the payment method is also 100% automatic</Grid>
-        <Grid item xs={4}><Img src="images/D.jpg" /></Grid>
-        <Grid item xs={8}>Green: forget about paper. Save the trees.</Grid>
-        <Grid item xs={4}><Img src="images/E.jpg" /></Grid>
-        <Grid item xs={12}>Ooooooookay</Grid>
-        <Grid item xs={4}><Img src="images/F.jpg" /></Grid>
-        <Grid item xs={8}>But is this REAL?</Grid>
-        <Grid item xs={12}>Short answer:</Grid>
-        <Grid item xs={6}>Yes!</Grid>
-        <Grid item xs={6}><Img src="images/G.jpg" /></Grid>
-        <Grid item xs={12}>We are developing our product now. We ask people to tell about what they want. If you would like to help us with your opinion, just write feedback.</Grid>
-        <Grid item xs={12}>9-es szövegdoboz (max 250 karakter)</Grid>
-        <Grid item xs={12}>*Design elemek...*</Grid>
         <Grid item xs={8}>Let's talk about privacy. We know privacy is a serious thing, so we don't collect any data. Yes, it's true.</Grid>
         <Grid item xs={4}><Img src="images/I.jpg" /></Grid>
         <Grid item xs={12}>We go even further: we are an open source project, so you can be sure about how our app works.</Grid>

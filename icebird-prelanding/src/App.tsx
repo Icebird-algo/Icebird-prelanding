@@ -4,7 +4,9 @@ import PageContent from './components/page-content';
 function App() {
   return (
     <div className="App">
-      <PageContent />
+      <div style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+        <PageContent />
+      </div>
     </div>
   );
 }
