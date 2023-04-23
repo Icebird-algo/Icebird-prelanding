@@ -1,5 +1,5 @@
-export default function Img ({src}: {src: string}) {
+export default function Img ({src, fullSize}: {src: string, fullSize: boolean}) {
     return(
-        <img src={src} alt="Kép" style={{ width: '100%', height: '100%', marginTop: 'auto', marginBottom: 'auto' }} />
+        <img src={src} alt="Kép" style={{ width: fullSize ? '100%' : 'auto', height: fullSize ? '100%' : 'auto', marginTop: 'auto', marginBottom: 'auto' }} />
     )
 }
