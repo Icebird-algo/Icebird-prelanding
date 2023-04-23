@@ -4,23 +4,25 @@ import Img from "./image-component";
 export default function PageContent () {
   return(
     <>
-      <Grid container spacing={2} style={{ paddingTop: '50px' }}>
+      <Grid container spacing={2}>
         <Grid container style={{ marginTop: '25px' }}>
-          <Grid item xs={6} style={{ paddingLeft: '50px' }}>
-            <div style={{ fontSize: '75px' }}>Icebird Algo</div>
-            <hr/>
-            <div style={{ fontSize: '75px' }}>For You</div>
+          <Grid item xs={6} style={{ marginBottom: 'auto', marginTop: 'auto' }}>
+            <div style={{ marginTop: 'auto', marginBottom: 'auto' }}>
+              <div style={{ fontSize: '120px' }}>Icebird.algo</div>
+              <div style={{ marginTop: '20px', height: '50px', backgroundColor: '#f421ff' }}></div>
+              <div style={{ marginTop: '20px', fontSize: '65px' }}>We are creating NFT legal smart contracts for you</div>
+            </div>
           </Grid>
           <Grid item xs={6}><Img src="images/0LOGO.jpg" /></Grid>
         </Grid>
-        <Grid container style={{ marginTop: '50px' }}>
+        <Grid container>
           <Grid item xs={6}><Img src="images/A.jpg" /></Grid>
           <Grid item xs={6}><Img src="images/B.jpg" /></Grid>
         </Grid>
-        <Grid item xs={12} style={{ marginTop: '50px' }}>
+        <Grid item xs={12} style={{ marginTop: '30px' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '65px' }}>Three words</div>
+          <div style={{ fontWeight: 'bold', fontSize: '50px' }}>Three words</div>
           <div style={{ fontWeight: 'bold', fontSize: '40px' }}>Three words</div>
-          <div style={{ fontWeight: 'bold', fontSize: '30px' }}>Three words</div>
-          <div style={{ fontWeight: 'bold', fontSize: '25px' }}>Three words</div>
         </Grid>
         <Grid container style={{ marginTop: '50px' }}>
           <Grid item xs={8} style={{ padding: '250px 0px 250px 50px', backgroundColor: '#ab36fe' }}>
@@ -42,15 +44,20 @@ export default function PageContent () {
             <Img src="images/E.jpg" />
           </Grid>
         </Grid>
-        <Grid container style={{ marginTop: '50px' }}>
+        <Grid container>
           <Grid item xs={12}>
-            Okay...
+            <div style={{ height: '50px', color: '#f421ff' }}></div>
           </Grid>
+        </Grid>
+        <Grid container>
           <Grid item xs={4}>
             <Img src="images/F.jpg" />
           </Grid>
-          <Grid item xs={8}>
-            But is this REAL?
+          <Grid item xs={8} style={{ paddingLeft: '50px', paddingTop: '50px' }}>
+            <div style={{ fontSize: '100px', textAlign: 'left' }}>Okay...</div>
+            <div style={{ fontSize: '65px', textAlign: 'left' }}>But is this REAL?</div>
+            <div style={{ fontSize: '100px', textAlign: 'left' }}>Short answer:</div>
+            <div style={{ fontSize: '120px', textAlign: 'left' }}>Yes!</div>
           </Grid>
         </Grid>
         <Grid container style={{ marginTop: '50px' }}>
@@ -74,7 +81,7 @@ export default function PageContent () {
           *Design elemek...*
         </Grid>
         <Grid item xs={8}>Let's talk about privacy. We know privacy is a serious thing, so we don't collect any data. Yes, it's true.</Grid>
-        <Grid item xs={4}><Img src="images/I.jpg" /></Grid>
+        <Grid item xs={4}><Img src="images/i.jpg" /></Grid>
         <Grid item xs={12}>We go even further: we are an open source project, so you can be sure about how our app works.</Grid>
         <Grid item xs={12}>Design</Grid>
         <Grid item xs={8}>Hey, sounds good, but how will it look like for real?</Grid>
@@ -119,7 +126,7 @@ export default function PageContent () {
         <Grid item xs={4}><Img src="images/L.jpg" /></Grid>
         <Grid item xs={4}><Img src="images/M.jpg" /></Grid>
         <Grid item xs={4}><Img src="images/N.jpg" /></Grid>
-        <Grid item xs={8}>Let's make it happen!</Grid>
+        <Grid item xs={8}><div style={{ fontSize: '150px' }}>Let's make it happen!</div></Grid>
         <Grid item xs={4}><Img src="images/O.jpg" /></Grid>
       </Grid>
     </>
