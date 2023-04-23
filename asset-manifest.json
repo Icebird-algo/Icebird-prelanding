@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Icebird-prelanding/static/css/main.073c9b0a.css",
-    "main.js": "/Icebird-prelanding/static/js/main.bcc52906.js",
+    "main.css": "/Icebird-prelanding/static/css/main.5d1e1b59.css",
+    "main.js": "/Icebird-prelanding/static/js/main.d628a3ea.js",
     "static/js/787.bf55f3f6.chunk.js": "/Icebird-prelanding/static/js/787.bf55f3f6.chunk.js",
     "index.html": "/Icebird-prelanding/index.html",
-    "main.073c9b0a.css.map": "/Icebird-prelanding/static/css/main.073c9b0a.css.map",
-    "main.bcc52906.js.map": "/Icebird-prelanding/static/js/main.bcc52906.js.map",
+    "main.5d1e1b59.css.map": "/Icebird-prelanding/static/css/main.5d1e1b59.css.map",
+    "main.d628a3ea.js.map": "/Icebird-prelanding/static/js/main.d628a3ea.js.map",
     "787.bf55f3f6.chunk.js.map": "/Icebird-prelanding/static/js/787.bf55f3f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.bcc52906.js"
+    "static/css/main.5d1e1b59.css",
+    "static/js/main.d628a3ea.js"
   ]
 }
