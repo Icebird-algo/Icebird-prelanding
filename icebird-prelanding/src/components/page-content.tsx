@@ -31,10 +31,10 @@ export default function PageContent () {
       <Grid container spacing={2}>
         <Grid container>
           <Grid item xs={6} style={{ marginBottom: 'auto', marginTop: 'auto' }}>
-            <div style={{ marginTop: 'auto', marginBottom: 'auto' }}>
-              <div style={{ fontSize: 120 * sizeCoefficient }}>Icebird.algo</div>
+            <div style={{ marginTop: 'auto', marginBottom: 'auto',  paddingTop: 40 * sizeCoefficient }}>
+              <div style={{ fontSize: isXSSize ? (80 * sizeCoefficient) : 120 * sizeCoefficient }}>Icebird.algo</div>
               <div style={{ marginTop: 20 * sizeCoefficient, height: '50px', backgroundColor: '#ab36fe' }}></div>
-              <div style={{ marginTop: 20 * sizeCoefficient, paddingLeft: '25px', paddingRight: '25px', fontSize: 65 * sizeCoefficient }}>We are creating NFT legal smart contracts for you</div>
+              <div style={{ marginTop: 20 * sizeCoefficient, marginBottom: 40 * sizeCoefficient, paddingLeft: '25px', paddingRight: '25px', fontSize: 65 * sizeCoefficient }}>We are creating NFT legal smart contracts for you</div>
             </div>
           </Grid>
           <Grid item xs={6}><Img src="images/0LOGO.jpg" fullSize={true} isArrow={false} /></Grid>
@@ -81,7 +81,7 @@ export default function PageContent () {
           <Grid item xs={6}>
             <Img src="images/F.jpg" fullSize={true} isArrow={false} />
           </Grid>
-          <Grid item xs={6} style={{ paddingTop: '25px' }}>
+          <Grid item xs={6} style={{ paddingTop: 25 * sizeCoefficient }}>
             <div style={{ paddingLeft: 50 * sizeCoefficient, fontSize: 65 * sizeCoefficient, textAlign: 'left' }}>Okay...</div>
             <div style={{ paddingLeft: 50 * sizeCoefficient, fontSize: 120 * sizeCoefficient, textAlign: 'left' }}>But is this real?</div>
             <div style={{ paddingLeft: 50 * sizeCoefficient, fontSize: 65 * sizeCoefficient, textAlign: 'left' }}>Short answer:</div>
@@ -119,8 +119,10 @@ export default function PageContent () {
           <Grid item xs={12} style={{ height: '50px', backgroundColor: '#76f834' }}></Grid>
         </Grid>
         <Grid container>
-          <Grid item xs={8} style={{ paddingLeft: 150 * sizeCoefficient, paddingRight: '25px', paddingTop: '25px', textAlign: 'right', fontSize: 120 * sizeCoefficient }}>
-            Hey! <br/> <b style={{ fontWeight: 'normal', fontSize: 80 * sizeCoefficient }}>Sounds good, but how will it look like for real?</b>
+          <Grid item xs={8} style={{ paddingLeft: 150 * sizeCoefficient, paddingRight: '25px', paddingTop: 25 * sizeCoefficient, textAlign: 'right', fontSize: 120 * sizeCoefficient }}>
+            <div style={{ lineHeight: isSSize ? (sizeCoefficient + 0.5) : (sizeCoefficient + 0.2) }}>
+              Hey! <br/> <b style={{ fontWeight: 'normal', fontSize: 80 * sizeCoefficient }}>Sounds good, but how will it look like for real?</b>
+            </div>
           </Grid>
           <Grid item xs={4}>
             <Img src="images/J.jpg" fullSize={true} isArrow={false} />
@@ -128,7 +130,7 @@ export default function PageContent () {
         </Grid>
         <Grid container>
           <Grid item xs={12}>
-            <Img src="images/arrow.png" fullSize={false} isArrow={true} />
+            <Img src="images/arrow.png" fullSize={true} isArrow={false} />
           </Grid>
         </Grid>
         <Grid container>
@@ -142,7 +144,7 @@ export default function PageContent () {
         </Grid>
         <Grid container>
           <Grid item xs={12}>
-            <Img src="images/arrow.png" fullSize={false} isArrow={true} />
+            <Img src="images/arrow.png" fullSize={true} isArrow={false} />
           </Grid>
         </Grid>
         <Grid container>
@@ -180,19 +182,19 @@ export default function PageContent () {
         </Grid>
         <Grid container spacing={4}>
           <Grid item xs={1}></Grid>
-          <Grid item xs={2} style={{ fontSize: 50 * sizeCoefficient }}>Dombi Balázs</Grid>
-          <Grid item xs={2} style={{ fontSize: 50 * sizeCoefficient }}>Begál Gábor</Grid>
-          <Grid item xs={2} style={{ fontSize: 50 * sizeCoefficient }}>Kolozsi Ádám</Grid>
-          <Grid item xs={2} style={{ fontSize: 50 * sizeCoefficient }}>Ferencsik Márk</Grid>
-          <Grid item xs={2} style={{ fontSize: 50 * sizeCoefficient }}>Gubicza Viktor</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Dombi Balázs</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Begál Gábor</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Kolozsi Ádám</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Ferencsik Márk</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Gubicza Viktor</Grid>
         </Grid>
         <Grid container style={{ marginBottom: 50 * sizeCoefficient }}>
           <Grid item xs={1}></Grid>
-          <Grid item xs={2} style={{ fontSize: 25 * sizeCoefficient }}>CEO</Grid>
-          <Grid item xs={2} style={{ fontSize: 25 * sizeCoefficient }}>COO</Grid>
-          <Grid item xs={2} style={{ fontSize: 25 * sizeCoefficient }}>CFO</Grid>
-          <Grid item xs={2} style={{ fontSize: 25 * sizeCoefficient }}>Frontend developer</Grid>
-          <Grid item xs={2} style={{ fontSize: 25 * sizeCoefficient }}>Backend developer</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>CEO</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>COO</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>CFO</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>Frontend <br/> developer</Grid>
+          <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>Backend <br/> developer</Grid>
         </Grid>
         <Grid item xs={12}>
           <div style={{ height: '50px', backgroundColor: '#ab36fe' }}></div>
