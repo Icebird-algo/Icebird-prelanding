@@ -12,7 +12,6 @@ export default function PageContent () {
   const isXSSize = useMediaQuery(theme.breakpoints.down(600));
 
   useEffect(() => {
-    console.log('Large:', isLSize, 'Medium:', isMSize, 'Small:', isSSize, 'Extra small:', isXSSize);
     if(isXSSize) setSizeCoefficient(0.35);
     else {
       if(isSSize) setSizeCoefficient(0.45);
@@ -130,7 +129,7 @@ export default function PageContent () {
         </Grid>
         <Grid container>
           <Grid item xs={12}>
-            <Img src="images/arrow.png" fullSize={true} isArrow={false} />
+            <Img src="images/arrow.png" fullSize={true} isArrow={true} />
           </Grid>
         </Grid>
         <Grid container>
@@ -144,7 +143,7 @@ export default function PageContent () {
         </Grid>
         <Grid container>
           <Grid item xs={12}>
-            <Img src="images/arrow.png" fullSize={true} isArrow={false} />
+            <Img src="images/arrow.png" fullSize={true} isArrow={true} />
           </Grid>
         </Grid>
         <Grid container>
