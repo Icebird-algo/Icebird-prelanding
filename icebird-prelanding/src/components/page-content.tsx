@@ -1,4 +1,4 @@
-import { Grid, TextareaAutosize, useMediaQuery, useTheme } from "@mui/material";
+import { Button, Grid, TextareaAutosize, useMediaQuery, useTheme } from "@mui/material";
 import Img from "./image-component";
 import { useEffect, useState } from "react";
 
@@ -31,9 +31,9 @@ export default function PageContent () {
         <Grid container>
           <Grid item xs={6} style={{ marginBottom: 'auto', marginTop: 'auto' }}>
             <div style={{ marginTop: 'auto', marginBottom: 'auto',  paddingTop: 40 * sizeCoefficient }}>
-              <div style={{ fontSize: isXSSize ? (80 * sizeCoefficient) : 120 * sizeCoefficient }}>Icebird.algo</div>
+              <div style={{ fontSize: isXSSize ? (80 * sizeCoefficient) : 120 * sizeCoefficient, paddingLeft: '20px' }}>Icebird.algo</div>
               <div style={{ marginTop: 20 * sizeCoefficient, height: '50px', backgroundColor: '#ab36fe' }}></div>
-              <div style={{ marginTop: 20 * sizeCoefficient, marginBottom: 40 * sizeCoefficient, paddingLeft: '25px', paddingRight: '25px', fontSize: 65 * sizeCoefficient }}>We are creating NFT legal smart contracts for you</div>
+              <div style={{ marginTop: 20 * sizeCoefficient, marginBottom: 40 * sizeCoefficient, fontSize: 65 * sizeCoefficient, paddingLeft: '25px' }}>We are creating NFT legal smart contracts for you</div>
             </div>
           </Grid>
           <Grid item xs={6}><Img src="images/0LOGO.jpg" fullSize={true} isArrow={false} /></Grid>
@@ -48,7 +48,7 @@ export default function PageContent () {
           <div style={{ fontWeight: 'bold', fontSize: 40 * sizeCoefficient }}>Three words</div>
         </Grid>
         <Grid container style={{ marginTop: '50px' }}>
-          <Grid item xs={8} style={{ paddingTop: 250 * sizeCoefficient, paddingBottom: 250 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, backgroundColor: '#ab36fe', textAlign: 'justify', lineHeight: sizeCoefficient }}>
+          <Grid item xs={8} style={{ paddingTop: 150 * sizeCoefficient, paddingBottom: 150 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, backgroundColor: '#ab36fe', textAlign: 'justify', lineHeight: sizeCoefficient }}>
             <b style={{ fontSize: 65 * sizeCoefficient }}>Secure</b>
             <br/>
             <b style={{ fontWeight: 'normal', fontSize: 50 * sizeCoefficient }}>NFTs can't be faked. Pay with algo. By blockchain system, contracts can't be falsified.</b>
@@ -56,7 +56,7 @@ export default function PageContent () {
           <Grid item xs={4}>
             <Img src="images/C.jpg" fullSize={true} isArrow={false} />
             </Grid>
-          <Grid item xs={8} style={{ paddingTop: 250 * sizeCoefficient, paddingBottom: 250 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, textAlign: 'justify', lineHeight: sizeCoefficient }}>
+          <Grid item xs={8} style={{ paddingTop: 150 * sizeCoefficient, paddingBottom: 150 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, textAlign: 'justify', lineHeight: sizeCoefficient }}>
             <b style={{ fontSize: 65 * sizeCoefficient }}>Easy</b>
             <br/>
             <b style={{ fontWeight: 'normal', fontSize: 50 * sizeCoefficient }}>Just connect your wallet and trade. Don't worry, we generate your contracts and the payment method is also <b>100%</b> automatic.</b>
@@ -64,7 +64,7 @@ export default function PageContent () {
           <Grid item xs={4}>
             <Img src="images/D.jpg" fullSize={true} isArrow={false} />
             </Grid>
-          <Grid item xs={8} style={{ paddingTop: 250 * sizeCoefficient, paddingBottom: 250 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, backgroundColor: '#76f834', textAlign: 'justify', lineHeight: sizeCoefficient }}>
+          <Grid item xs={8} style={{ paddingTop: 150 * sizeCoefficient, paddingBottom: 150 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, backgroundColor: '#76f834', textAlign: 'justify', lineHeight: sizeCoefficient }}>
             <b style={{ fontSize: 65 * sizeCoefficient }}>Green</b>
             <br/>
             <b style={{ fontWeight: 'normal', fontSize: 50 * sizeCoefficient }}>Forget about paper. Save the trees.</b>
@@ -80,7 +80,7 @@ export default function PageContent () {
           <Grid item xs={6}>
             <Img src="images/F.jpg" fullSize={true} isArrow={false} />
           </Grid>
-          <Grid item xs={6} style={{ paddingTop: 25 * sizeCoefficient }}>
+          <Grid item xs={6} style={{ paddingTop: 25 * sizeCoefficient, paddingBottom: 25 * sizeCoefficient }}>
             <div style={{ paddingLeft: 50 * sizeCoefficient, fontSize: 65 * sizeCoefficient, textAlign: 'left' }}>Okay...</div>
             <div style={{ paddingLeft: 50 * sizeCoefficient, fontSize: 120 * sizeCoefficient, textAlign: 'left' }}>But is this real?</div>
             <div style={{ paddingLeft: 50 * sizeCoefficient, fontSize: 65 * sizeCoefficient, textAlign: 'left' }}>Short answer:</div>
@@ -89,10 +89,17 @@ export default function PageContent () {
         </Grid>
         <Grid container>
           <Grid item xs={6}>
-            <div style={{ paddingTop: 50 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, textAlign: 'justify', fontSize: 50 * sizeCoefficient }}>
-              We are developing our product now. We ask people to tell about what they want. If you want to help us with your opinion, just write feedback.
-            </div>
-            <TextareaAutosize placeholder="You can write your feedback here" style={{ marginTop: '25px', width: '50%' }} />
+            <Grid container xs={12}>
+              <div style={{ paddingTop: 50 * sizeCoefficient, paddingRight: 100 * sizeCoefficient, paddingLeft: 100 * sizeCoefficient, textAlign: 'justify', fontSize: 50 * sizeCoefficient }}>
+                We are developing our product now. We ask people to tell about what they want. If you want to help us with your opinion, just write feedback.
+              </div>
+            </Grid>
+            <Grid item xs={12}>
+              <TextareaAutosize placeholder="You can write your feedback here" style={{ marginTop: '25px', width: '50%' }} />
+            </Grid>
+            <Grid item xs={12}>
+              <Button variant="contained" sx={{ backgroundColor: "#ab36fe" }}>Send</Button>
+            </Grid>
           </Grid>
           <Grid item xs={6}>
             <Img src="images/G.jpg" fullSize={true} isArrow={false} />
@@ -102,7 +109,7 @@ export default function PageContent () {
           <Grid item xs={12} style={{ height: '50px', backgroundColor: '#76f834' }}></Grid>
         </Grid>
         <Grid container>
-          <Grid item xs={8} style={{ paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, paddingTop: 50 * sizeCoefficient, textAlign: 'justify', fontSize: 50 * sizeCoefficient }}>
+          <Grid item xs={8} style={{ paddingLeft: 120 * sizeCoefficient, paddingRight: 120 * sizeCoefficient, paddingTop: 50 * sizeCoefficient, textAlign: 'justify', fontSize: 50 * sizeCoefficient }}>
             Let's talk about privacy. We know privacy is a serious thing, so we don't collect any data. Yes, it's true.
           </Grid>
           <Grid item xs={4}>
@@ -171,7 +178,7 @@ export default function PageContent () {
             </div>
           </Grid>
         </Grid>
-        <Grid container spacing={4} style={{ marginTop: 50 * sizeCoefficient }}>
+        <Grid container spacing={3 * sizeCoefficient} style={{ marginTop: 25 * sizeCoefficient }}>
           <Grid item xs={1}></Grid>
           <Grid item xs={2}><Img src="images/profile-db.jpeg" fullSize={true} isArrow={false} /></Grid>
           <Grid item xs={2}><Img src="images/profile-bg.jpeg" fullSize={true} isArrow={false} /></Grid>
@@ -179,7 +186,7 @@ export default function PageContent () {
           <Grid item xs={2}><Img src="images/profile-fm.jpeg" fullSize={true} isArrow={false} /></Grid>
           <Grid item xs={2}><Img src="images/profile-gv.jpeg" fullSize={true} isArrow={false} /></Grid>
         </Grid>
-        <Grid container spacing={4}>
+        <Grid container spacing={3 * sizeCoefficient}>
           <Grid item xs={1}></Grid>
           <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Dombi Balázs</Grid>
           <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Begál Gábor</Grid>
@@ -187,7 +194,7 @@ export default function PageContent () {
           <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Ferencsik Márk</Grid>
           <Grid item xs={2} style={{ fontSize: isXSSize ? (35 * sizeCoefficient) : (50 * sizeCoefficient) }}>Gubicza Viktor</Grid>
         </Grid>
-        <Grid container style={{ marginBottom: 50 * sizeCoefficient }}>
+        <Grid container spacing={3 * sizeCoefficient} style={{ marginBottom: 50 * sizeCoefficient }}>
           <Grid item xs={1}></Grid>
           <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>CEO</Grid>
           <Grid item xs={2} style={{ fontSize: isXSSize ? (20 * sizeCoefficient) : (25 * sizeCoefficient) }}>COO</Grid>
@@ -198,7 +205,7 @@ export default function PageContent () {
         <Grid item xs={12}>
           <div style={{ height: '50px', backgroundColor: '#ab36fe' }}></div>
         </Grid>
-        <Grid item xs={12} style={{ marginTop: 50 * sizeCoefficient, marginBottom: 50 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, textAlign: 'justify', fontSize: 50 * sizeCoefficient }}>
+        <Grid container xs={12} style={{ marginTop: 50 * sizeCoefficient, marginBottom: 50 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, textAlign: 'justify', fontSize: 50 * sizeCoefficient }}>
           If you want to support our project, just buy some NFT's from our icebird collection. <br/> NFT collection coming soon...
         </Grid>
         <Grid container>
@@ -214,7 +221,7 @@ export default function PageContent () {
         </Grid>
         <Grid container>
           <Grid item xs={8}>
-            <div style={{ fontSize: 120 * sizeCoefficient, paddingTop: 50 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, textAlign: 'justify' }}>Let's make <br/> it happen!</div>
+            <div style={{ fontSize: 120 * sizeCoefficient, paddingTop: 50 * sizeCoefficient, paddingLeft: 150 * sizeCoefficient, paddingRight: 150 * sizeCoefficient, textAlign: 'justify' }}>Let's make it happen!</div>
           </Grid>
           <Grid item xs={4}>
             <Img src="images/O.jpg" fullSize={true} isArrow={false} />
